@@ -1,35 +1,42 @@
 <html>
 
+<head>
+    <title>Ayyo whatsup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+
 <body class="container">
     <h1 class="b">Welcome to my server</h1>
-    <p class="a">Name: Phuchit Ploykasem</p>
-    <p class="a">Student ID: 63011258</p>
-    <p>First assignment</p>
-    <video width="400" controls>
-        <source src="63011220_Nunnapat.mp4" type="video/mp4">
-    </video>
-    <button onclick="window.location.href='test.html'"></button>
+    <div class="intro">
+        <p class="a">Name: Phuchit Ploykasem</p>
+        <p class="a">Student ID: 63011258</p>
+    </div>
+    <div class="assignmentContainer">
+        <p class="assignment">My assignment</p>
+        <div class="videoWrapper">
+            <div class="videoContainer">
+                <p class="vdoHeader">Network blocking</p>
+                <video width="100%" height="400" controls>
+                    <source src="Network blocking.mp4" type="video/mp4">
+                </video>
+                <div class="buttonContainer">
+                    <button class="button" onclick="window.location.href='network-blocking.html'">Details</button>
+                </div>
+            </div>
+            <div class="videoContainer">
+                <p class="vdoHeader">First assignment</p>
+                <video width="100%" height="400" controls>
+                    <source src="Network blocking.mp4" type="video/mp4">
+                </video>
+                <div class="buttonContainer">
+                    <button class="button" onclick="window.location.href='test.html'">Button</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
-
-
-<style>
-    * {
-        font-family: "Lucida Console", Courier, monospace;
-    }
-
-    .container {
-        padding: 20;
-        background-color: powderblue;
-    }
-
-    .a {
-        font-size: 32px;
-    }
-
-    .b {
-        text-align: center;
-        justify-content: center;
-    }
-</style>
